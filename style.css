@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Poppins&display=swap');
+
+/* Formatação dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #000;
+}
+
+/* transição dos links */
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* Nav */
+nav, .nav-links {
+    display: flex;
+}
+nav {
+    top: 0;
+    left: 0;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    z-index: 999;
+}
+
+.nav-links {
+    gap: 60;
+}
