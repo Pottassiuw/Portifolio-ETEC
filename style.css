@@ -44,15 +44,15 @@ nav {
     font-size: 1.5rem;
 }
 
-.nav-list >li>a {
+.nav-list li a {
     color: black;
     text-decoration: none;
     transition: all 400ms ease;
 }
 
-.nav-item >a:hover,
-.nav-item > a:focus {
-    color: #4acf95;
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #0EB688;
     cursor: pointer;
 }
 .nav-item {
@@ -61,15 +61,15 @@ nav {
 
 .logo {
     font-size: 2rem;
-    cursor: pointer;
     pointer-events: none;
+    cursor: default;
 }
 
-.nav-item > a::after {
+.nav-item a::after {
     content: '';
-    height: 2px;
+    height: 0.2rem;
     width: 0%;
-    background-color: #4acf95;
+    background: linear-gradient(90deg, #19B56F 0%, #0DE5AB 100%);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -78,9 +78,18 @@ nav {
     pointer-events: none;
 }
 
-.nav-item>a:hover::after,
-.nav-item>a:focus::after {
+.nav-item a:hover::after,
+.nav-item a:focus::after {
     opacity: 1;
     width: 100%;
     
+}
+
+.mobile-menu, .mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu-icon button {
+    border: none;
+    background: transparent;
 }

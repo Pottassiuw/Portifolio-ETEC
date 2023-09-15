@@ -1,0 +1,34 @@
+/* Mobile */
+
+@media screen and (max-width: 730px){
+    .nav-list {
+        display: none;
+    }
+    .mobile-menu {
+        margin-top: 1rem;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        position: relative;
+    }
+    .open {
+        display: block;
+    }
+
+}
