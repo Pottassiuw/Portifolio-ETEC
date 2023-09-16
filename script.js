@@ -9,11 +9,3 @@ function toggleMenu() {
     }
 }
 
-// Adicione este código para fechar o menu ao clicar em um item do menu
-let menuItems = document.querySelectorAll('.nav-item');
-
-menuItems.forEach(function(item) {
-    item.addEventListener('click', function() {
-        toggleMenu(); // Chama a função para fechar o menu
-    });
-});
