@@ -18,7 +18,7 @@ p {
     color: #000;
 }
 
-/* transição dos list */
+/* transition of list */
 a,
 .btn {
     transition: all 300ms ease;
@@ -35,6 +35,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 13vh;
+    min-width: 100%;
     z-index: 999;
 }
 
@@ -52,7 +53,7 @@ nav {
 
 .nav-item a:hover,
 .nav-item a:focus {
-    color: #0EB688;
+    color: #4169E1;
     cursor: pointer;
 }
 .nav-item {
@@ -60,6 +61,7 @@ nav {
 } 
 
 .logo {
+    color: #4169E1;
     font-size: 2rem;
     pointer-events: none;
     cursor: default;
@@ -69,7 +71,7 @@ nav {
     content: '';
     height: 0.2rem;
     width: 0%;
-    background: linear-gradient(90deg, #19B56F 0%, #0DE5AB 100%);
+    background: linear-gradient(90deg, #000080 0%, #0632b3 100%);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -92,4 +94,209 @@ nav {
 .mobile-menu-icon button {
     border: none;
     background: transparent;
+}
+
+/* Sections */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    min-height: fit-content;
+}
+
+.section-container, #profile {
+    display: flex;
+}
+
+/* Profile */
+
+#profile {
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic__container {
+    display: flex;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    transition: all 500ms;
+}
+
+.section__pic__container img {
+    width: 500px;
+    border-radius: 50%;
+    transition: all 500ms;
+}
+.section__pic__container img:hover {
+    scale: 1.05;
+}
+.section__pic__container:hover{
+    transform: translateY(-5%);
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: #000080;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icons */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 400ms ease;
+}
+
+.btn-color-1 {
+    color: #e6e6e6;
+    background-color: #4169E1;
+    border: #4169E1 2px solid;
+}
+
+.btn-color-1:hover {
+    scale: 1.02;
+    border: #4169E1 2px solid;
+    color: #4169E1;
+}
+.btn-color-1::before {
+    background: #e6e6e6;
+    width: 100%;
+}
+.btn-color-2 {
+    background: none;
+    border: #4169E1 2px solid;
+    color: #4169E1;
+}
+.btn-color-2:hover {
+    scale: 1.02;
+    cursor: pointer;
+    color: #e6e6e6;
+    border: #4169E1 2px solid;
+}
+.btn-color-2::before {
+    background: #4169E1;
+}
+
+
+.btn-container .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 400ms ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+/* About Section */
+
+#about {
+    position: relative;
+    margin-top: 10rem;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(63,63,63) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 450px;
+    width: 500px;
+    margin: auto 0;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    width: 500px;
+    height: 400px;
 }
