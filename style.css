@@ -300,3 +300,47 @@ section {
     width: 500px;
     height: 400px;
 }
+
+/* Experience Section */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.sub-title {
+    text-align: center;
+    padding: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-flow: row wrap;
+    gap: 2.5rem;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
