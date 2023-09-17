@@ -1,172 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio - MTR</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQueries.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
 
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
     <nav id="nav-bar">
+      <div class="logo">
+        <h1>TRM</h1>
+      </div>
 
-        <div class="logo">
-            <h1>TRM</h1>
-        </div>
+      <div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about">Sobre</a></li>
+          <li class="nav-item"><a href="#experience">Experiência</a></li>
+          <li class="nav-item"><a href="#projects">Projetos</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
 
-        <div>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#about">Sobre</a></li>
-                <li class="nav-item"><a href="#experience">Experiência</a></li>
-                <li class="nav-item"><a href="#">Projetos</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
-            </ul>
-        </div>
-
-        <div class="mobile-menu-icon">
-            <button onclick="toggleMenu()"><img src="assets/hamburguerMenu.png" class="icon"></button>
-        </div>
+      <div class="mobile-menu-icon">
+        <button onclick="toggleMenu()">
+          <img src="assets/hamburguerMenu.png" class="icon" />
+        </button>
+      </div>
     </nav>
 
     <nav class="mobile-menu">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#">Sobre</a></li>
-            <li class="nav-item"><a href="#">Experiência</a></li>
-            <li class="nav-item"><a href="#">Projetos</a></li>
-            <li class="nav-item"><a href="#">Contato</a></li>
-        </ul>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Sobre</a></li>
+        <li class="nav-item"><a href="#">Experiência</a></li>
+        <li class="nav-item"><a href="#">Projetos</a></li>
+        <li class="nav-item"><a href="#">Contato</a></li>
+      </ul>
     </nav>
-                <section id="profile">
-                    <div class="section__pic__container">
-                        <img src="./Assets/FimosisMan.jpeg" alt="">
-                    </div>
-                    <div class="section__text">
-                        <p class="section__text__p1">Olá, eu sou</p>
-                        <h1 class="title">Thiago</h1>
-                        <p class="section__text__p2">Desenvolvedor de Sistemas</p>
-                        <div class="btn-container">
-                            <button class="btn btn-color-1" onclick="window.open('./Assets/resume-example.pdf')">Botão 1</button>
-                            <button class="btn btn-color-2" onclick="location.href='./#contact' ">Contato</button>
-                        </div>
-                        <div id="socials-container">
-                            <a href="https://linkedin.com" target="_blank"><img src="./Assets/linkedin.png"
-                                class="icon"></a>
-                            <a href="https://github.com/Pottassiuw" target="_blank"><img src="./Assets/github.png"
-                                class="icon"></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="about">
-                    <p class="section__text__p1">Venha Nos Conhecer Mais</p>
-                    <h1 class="title">Sobre Nós</h1>
-                    <div class="section-container">
-                        <div class="section__pic-container">
-                            <img src="./Assets/GravetoMan.jfif" class="about-pic">
-                        </div>
-                        <div class="about-details-container">
-                            <div class="about-containers">
-                                <div class="details-container">
-                                    <img src="./Assets/experience.png" class="icon">
-                                    <h3>Experiência</h3>
-                                    <p>+6 meses<br>Desenvolvimento de Sistemas</p>
-                                </div>
-                                <div class="details-container">
-                                    <img src="./Assets/education.png" class="icon">
-                                    <h3>Educação</h3>
-                                    <p>Técnico de Desenvolvimentos de Sistemas<br>Etec Ilza Nascimento Pintus</p>
-                                </div>
-                            </div>
-                            <div class="text-container">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam praesentium, modi at neque exercitationem eaque, magni incidunt porro perspiciatis suscipit perferendis quod molestias adipisci possimus ex recusandae quidem ratione. Incidunt sequi maiores atque laudantium, reiciendis, error nemo deserunt ab explicabo ipsa ullam eius magnam voluptate, saepe magni harum odio adipisci.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./Assets/arrow.png" class="icon arrow" onclick="location.href='./#experience' ">
-                </section>
-                <section id="experience">
-                    <p class="section__text__p1">Nossa</p>
-                    <h1 class="title">Experiência</h1>
-                    <div class="experience-details-container">
-                        <div class="about-containers">
-                            <div class="details-container">
-                                <h3 class="experience-sub-title">Desenvolvimento Front-End</h3>
-                                <div class="article-container">
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>HTML</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>CSS</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>Bootstrap</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>React Native</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>PHP</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>Javascript</h3>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="details-container">
-                                <h3 class="experience-sub-title">Desenvolvimento Back-End</h3>
-                                <div class="article-container">
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>PYTHON</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>Git</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>C#</h3>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <img src="./Assets/checkmark.png" alt="" class="icon">
-                                        <div>
-                                            <h3>MySql</h3>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./Assets/arrow.png" class="icon arrow" onclick="location.href='./#projects' ">
-                </section>
-<script src="script.js"></script>
-</body>
+    <section id="profile">
+      <div class="section__pic__container">
+        <img src="./Assets/FimosisMan.jpeg" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Thiago</h1>
+        <p class="section__text__p2">Desenvolvedor de Sistemas</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./Assets/resume-example.pdf')"
+          >
+            Botão 1
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact' ">
+            Contato
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://linkedin.com" target="_blank"
+            ><img src="./Assets/linkedin.png" class="icon"
+          /></a>
+          <a href="https://github.com/Pottassiuw" target="_blank"
+            ><img src="./Assets/github.png" class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Venha Nos Conhecer Mais</p>
+      <h1 class="title">Sobre Nós</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./Assets/GravetoMan.jfif" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./Assets/experience.png" class="icon" />
+              <h3>Experiência</h3>
+              <p>+6 meses<br />Desenvolvimento de Sistemas</p>
+            </div>
+            <div class="details-container">
+              <img src="./Assets/education.png" class="icon" />
+              <h3>Educação</h3>
+              <p>
+                Técnico de Desenvolvimentos de Sistemas<br />Etec Ilza
+                Nascimento Pintus
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+              praesentium, modi at neque exercitationem eaque, magni incidunt
+              porro perspiciatis suscipit perferendis quod molestias adipisci
+              possimus ex recusandae quidem ratione. Incidunt sequi maiores
+              atque laudantium, reiciendis, error nemo deserunt ab explicabo
+              ipsa ullam eius magnam voluptate, saepe magni harum odio adipisci.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#experience' "
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Nossa</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3 class="experience-sub-title">Desenvolvimento Front-End</h3>
+            <div class="article-container">
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>React Native</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>PHP</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Javascript</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h3 class="experience-sub-title">Desenvolvimento Back-End</h3>
+            <div class="article-container">
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>PYTHON</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./Assets/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>MySql</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#projects' "
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Nossos Mais Recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Assets/project-1.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto Um</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='link aq'"
+              >
+                Expo.io
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='link aq'"
+              >
+                Sobre
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Assets/project-2.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto Dois</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='link aq'"
+              >
+                Expo.io
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='link aq'"
+              >
+                Sobre
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Assets/project-3.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto Três</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='link aq'"
+              >
+                Expo.io
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='link aq'"
+              >
+                Sobre
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#contact' "
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entre em Contato</p>
+      <h1 class="title">Contato</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Assets/email.png"
+            alt=""
+            class="icon contact-icon email-icon"
+          />
+          <a href="mailto:pottassiu@proton.me">pottassiu@proton.me</a>
+        </div>
+        <div class="contact-info-container">
+          <img src="./Assets/linkedin.png" alt="" class="icon contact-icon" />
+          <a
+            href="https://www.linkedin.com/in/thiago-nascimento-729077292/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">Sobre</a></li>
+            <li class="nav-item"><a href="#experience">Experiência</a></li>
+            <li class="nav-item"><a href="#projects">Projetos</a></li>
+            <li class="nav-item"><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169; 2023 Thiago Batista. Matheus Dos Reis. Raphael Ryan.
+        Todos os Direitos Reservados
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
