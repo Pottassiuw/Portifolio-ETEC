@@ -1,13 +1,12 @@
-/* Mobile */
-
-
 @media screen and (max-width: 1400px){
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers {
-        flex-wrap: wrap;
+    footer nav .nav-list {
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
     }
 
 }
@@ -74,6 +73,26 @@
 
     .about-containers {
         margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    footer nav .nav-list {
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        display: flex;
+        box-shadow: none;
+        flex-direction: row;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .nav-list li a {
+        font-size: 1.3rem;
+        padding: 0 1.5rem;
     }
 }   
 
@@ -108,7 +127,7 @@
     }
 
     .contact-info-container p, .nav-list li a {
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 
     .experience-sub-title {
@@ -118,15 +137,20 @@
         font-size: 1.5rem;
     }
 
-    .nav-item {
+    footer nav .nav-list {
+        box-shadow: none;
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
+
+    footer nav .nav-list a {
+        position: relative;
+    }
     
     .section__pic__container {
-        width: auto;
-        height: 46vw;
+        width: 40vw;
+        height: 40vw;
         justify-content: center;
     }
 
