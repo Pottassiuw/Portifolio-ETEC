@@ -123,6 +123,7 @@ section {
 }
 
 .section__pic__container {
+    z-index: -1;
     display: flex;
     position: relative;
     height: 400px;
@@ -301,7 +302,7 @@ section {
 }
 
 .section__pic-container {
-    height: 450px;
+    height: 500px;
     width: 500px;
     margin: auto 0;
 }
@@ -309,7 +310,7 @@ section {
 .about-pic {
     border-radius: 2rem;
     width: 500px;
-    height: 400px;
+    height: 500px;
 }
 
 /* Experience Section */
