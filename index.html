@@ -20,9 +20,8 @@
   <body>
     <nav id="nav-bar">
       <div class="logo">
-        <h1>TRM</h1>
+        <h1>TRM <span>.</span></h1>
       </div>
-
       <div>
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">Sobre</a></li>
@@ -39,28 +38,31 @@
       </div>
     </nav>
 
+
     <nav class="mobile-menu">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#">Sobre</a></li>
-        <li class="nav-item"><a href="#">Experiência</a></li>
-        <li class="nav-item"><a href="#">Projetos</a></li>
-        <li class="nav-item"><a href="#">Contato</a></li>
+        <li class="nav-item"><a href="#about">Sobre</a></li>
+        <li class="nav-item"><a href="#experience">Experiência</a></li>
+        <li class="nav-item"><a href="#projects">Projetos</a></li>
+        <li class="nav-item"><a href="#contact">Contato</a></li>
       </ul>
     </nav>
+
+
     <section id="profile">
       <div class="section__pic__container">
-        <img src="./Assets/FimosisMan.jpeg" alt="" />
+        <img src="./Assets/profile-pic.jpg" alt="" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Olá, eu sou</p>
-        <h1 class="title">Thiago</h1>
-        <p class="section__text__p2">Desenvolvedor de Sistemas</p>
+        <p class="section__text__p1">Olá, Nós Somos uma</p>
+        <h1 class="title">Equipe</h1>
+        <p class="section__text__p2">De Desenvolvedores de sistemas</p>
         <div class="btn-container">
           <button
             class="btn btn-color-1"
             onclick="window.open('./Assets/resume-example.pdf')"
           >
-            Botão 1
+            Currículo
           </button>
           <button class="btn btn-color-2" onclick="location.href='./#contact' ">
             Contato
@@ -76,13 +78,13 @@
         </div>
       </div>
     </section>
+
+
+
     <section id="about">
       <p class="section__text__p1">Venha Nos Conhecer Mais</p>
       <h1 class="title">Sobre Nós</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./Assets/GravetoMan.jfif" class="about-pic" />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -116,14 +118,18 @@
         class="icon arrow"
         onclick="location.href='./#experience' "
       />
+
+
     </section>
     <section id="experience">
-      <p class="section__text__p1">Nossa</p>
-      <h1 class="title">Experiência</h1>
+      <p class="section__text__p1">Nossas</p>
+      <h1 class="title">Habilidades</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h3 class="experience-sub-title">Desenvolvimento Front-End</h3>
+            <h3 class="experience-sub-title">
+              Desenvolvimento <br />Front-End
+            </h3>
             <div class="article-container">
               <article>
                 <img src="./Assets/checkmark.png" alt="" class="icon" />
@@ -164,7 +170,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h3 class="experience-sub-title">Desenvolvimento Back-End</h3>
+            <h3 class="experience-sub-title">Desenvolvimento <br />Back-End</h3>
             <div class="article-container">
               <article>
                 <img src="./Assets/checkmark.png" alt="" class="icon" />
@@ -200,6 +206,8 @@
         onclick="location.href='./#projects' "
       />
     </section>
+
+
     <section id="projects">
       <p class="section__text__p1">Nossos Mais Recentes</p>
       <h1 class="title">Projetos</h1>
@@ -209,17 +217,17 @@
             <div class="article-container">
               <img src="./Assets/project-1.png" alt="" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Um</h2>
+            <h2 class="experience-sub-title project-title">Card</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-1 project-btn"
-                onclick="location.href='link aq'"
+                onclick="location.href='' "
               >
                 Expo.io
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='link aq'"
+                onclick="location.href='./Projects/Card.html'"
               >
                 Sobre
               </button>
@@ -227,19 +235,19 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./Assets/project-2.png" alt="" class="project-img" />
+              <img src="./Assets/forms-home.png" alt="" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Dois</h2>
+            <h2 class="experience-sub-title project-title">Formulário</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-1 project-btn"
-                onclick="location.href='link aq'"
+                onclick="location.href='https://snack.expo.dev/@pottassiu/cadastro-cliente?platform=web'"
               >
                 Expo.io
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='link aq'"
+                onclick="location.href='./Projects/Form.html'"
               >
                 Sobre
               </button>
@@ -249,17 +257,17 @@
             <div class="article-container">
               <img src="./Assets/project-3.png" alt="" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Três</h2>
+            <h2 class="experience-sub-title project-title">App Filmes</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-1 project-btn"
-                onclick="location.href='link aq'"
+                onclick="location.href='https://snack.expo.dev/@pottassiu/site-filmes' "
               >
                 Expo.io
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='link aq'"
+                onclick="location.href='./Projects/Movies.html'"
               >
                 Sobre
               </button>
@@ -273,6 +281,8 @@
         onclick="location.href='./#contact' "
       />
     </section>
+
+
     <section id="contact">
       <p class="section__text__p1">Entre em Contato</p>
       <h1 class="title">Contato</h1>
@@ -295,6 +305,8 @@
         </div>
       </div>
     </section>
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -311,6 +323,8 @@
         Todos os Direitos Reservados
       </p>
     </footer>
+
+
     <script src="script.js"></script>
   </body>
 </html>
