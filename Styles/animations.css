@@ -1,0 +1,61 @@
+/* Progress bar items */
+
+/* Front-end */
+.skill-per.html {
+    width: 65%;
+    animation-delay: 0.4s;
+}
+
+.skill-per.css {
+    width: 55%;
+    animation-delay: 0.5s;
+}
+
+.skill-per.bootstrap {
+    width: 40%;
+    animation-delay: 0.7s;
+}
+.skill-per.react-native {
+    width: 45%;
+    animation-delay: 0.6s;
+}
+.skill-per.javascript {
+    width: 25%;
+    animation-delay: 0.8s;
+}
+
+/* Back-end */
+
+.skill-per.git {
+    width: 70%;
+    animation-delay: 0.4s;
+}
+
+.skill-per.python {
+    width: 55%;
+    animation-delay: 0.5s;
+}
+
+.skill-per.mysql {
+    width: 45%;
+    animation-delay: 0.6s;
+}
+
+.skill-per.csh {
+    width: 30%;
+    animation-delay: 0.7s;
+}
+
+
+
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
