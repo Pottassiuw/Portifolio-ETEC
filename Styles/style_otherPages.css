@@ -13,22 +13,109 @@ html {
 }
 
 body {
-    background-color: #D6D6D6;
+    background-color: #e6e6e6;
 }
 
 p {
     color: #000;
 }
 
-.section__text__p1_other_pages{
+nav, .nav-list {
+    display: flex;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+    min-width: 100%;
+    z-index: 999;
+}
+
+.nav-bar-top {
+    position: fixed;
+    backdrop-filter: blur(4px);
+}
+
+.nav-list {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav-list li a {
+    color: black;
+    text-decoration: none;
+    transition: all 400ms ease;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #4169E1;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.logo h1 a {
+    color: #4169E1;
+    text-decoration: none;
+}
+
+.logo {
+    color: #4169E1;
+    font-size: 2rem;
+    cursor: default;
+}
+
+.logo span {
+    color: #E0115F;
+    font-size: 4rem;
+}
+
+.nav-item a::after {
+    content: '';
+    height: 0.2rem;
+    width: 0%;
+    background: linear-gradient(90deg, #000080 0%, #E0115F 100%);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 400ms ease;
+    pointer-events: none;
+}
+
+.nav-item a:hover::after,
+.nav-item a:focus::after {
+    opacity: 1;
+    width: 100%;
+
+}
+
+.mobile-menu, .mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu-icon button {
+    border: none;
+    background: transparent;
+}
+
+.section__text__p1_other_pages {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
     color: #000080;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.title_other_pages{
+.title_other_pages {
     font-size: 3rem;
     text-align: center;
 }
@@ -41,13 +128,12 @@ p {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 2%;
+    margin: 10%;
 }
 
 .box-code-expo {
     padding: 1.5rem;
-    flex: 3;
-    background: #D6D6D6;
+    flex: 1;
     border-radius: 1.1rem;
     position: relative;
     margin: 2%;
@@ -58,13 +144,22 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex: 6;
+    height: fit-content;
+}
+
+.double_image img {
+    transition: all 300ms ease;
+}
+
+.double_image img:hover {
+    scale: 1.03;
+    transform: translateY(-5%);
 }
 
 .image_otherPage {
     border-radius: 2rem;
-    width: 25%;
-    height: auto;
+    width: 420px;
+    height: 550px;
     margin: 5%;
 }
 
@@ -99,7 +194,7 @@ p {
 }
 
 #pratica {
-    color : #992525;
+    color: #992525;
 }
 
 #img_title_code {
@@ -164,6 +259,21 @@ p {
     border-color: #E0115F;
 }
 
+.btn-color-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 400ms ease;
+}
+
+.btn-color-2:hover::before {
+    width: 100%;
+    background: #E0115F;
+}
 
 .btn-color-1::before {
     content: '';

@@ -5,18 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
-    <link rel="stylesheet" href="./style_otherPages.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/style_otherPages.css" type="text/css" />
 </head>
 
 <body>
-    <p class="section__text__p1_other_pages"> Projeto </p>
-    <h1 class="title_other_pages"> Card</h1>
-    <div class="details-container">
-        <div class="box-code-expo">
-
+    <nav id="nav-bar" class="nav-bar-top">
+        <div class="logo">
+            <h1><a href="../index.html">TRM <span>.</span></a></h1>
         </div>
-    </div>
+        <div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about">Sobre</a></li>
+                <li class="nav-item"><a href="#experience">Habilidades</a></li>
+                <li class="nav-item"><a href="#projects">Projetos</a></li>
+                <li class="nav-item"><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="details-container">
 
+        <h1 class="title_other_pages"> Filmes</h1>
+        <div class="box-code-expo">
+            <h1 class="title_other_pages" id="img_title_code">Código Produzido</h1>
+            <div class="double_image">
+                <img src="/Assets/Card-code1png.png" class="image_otherPage" />
+                <img src="/Assets/Card-code2.png" class="image_otherPage" />
+            </div>
+            <h1 class="title_other_pages" id="teoria"> Conceitos Teóricos</h1>
+            <p class="texto_descricao_especifica">React Native: Uma estrutura de desenvolvimento que permite criar
+                aplicativos móveis nativos usando JavaScript e React, compartilhando grande parte do código entre
+                plataformas iOS e Android.
+                useState: Um hook do React usado para gerenciar estados em componentes funcionais. Ele é fundamental
+                para alternar entre as imagens e descrições das cartas.
+                Componentização: A divisão da interface em componentes reutilizáveis, como "Card" e "Botão de Virar",
+                para facilitar o desenvolvimento e a manutenção.
+                Navegação: O uso de bibliotecas de navegação, como o React Navigation, para criar transições suaves
+                entre as telas.
+                Animações: O emprego da API de animações do React Native para criar o efeito de virar a tela.</p>
+            <h1 class="title_other_pages" id="pratica"> Conceitos Práticos</h1>
+            <p class="texto_descricao_especifica">Criação de componentes funcionais para cada tela.
+                Utilização do useState para gerenciar o estado das cartas, alternando entre imagens e descrições.
+                Implementação de botões ou gestos de arrastar para simular o efeito de virar a tela.</p>
+
+            <h1 class="title_other_pages" id="img_title_rodando"> Resultado Obtido</h1>
+            <div class="double_image">
+                <img src="/Assets/Card (Medium).png" class="image_otherPage" />
+                <img src="/Assets/Card-preview.png" class="image_otherPage" />
+            </div>
+            <p class="acesse_ja">Visualize sua Execução!</p>
+            <button class="btn btn-color-1 project-btn"
+                onclick="location.href='https://snack.expo.dev/@pottassiu/site-filmes' ">
+                Expo.io
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='../index.html'">
+                Voltar
+                <button>
+        </div>
+
+
+    </div>
+    </div>
 </body>
 
 </html>

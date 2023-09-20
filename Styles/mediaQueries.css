@@ -112,7 +112,9 @@
     .article-container {
         flex-direction: column;
     }
-
+    .nav-bar-top {
+        position: static;
+    }
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
@@ -149,9 +151,14 @@
     }
     
     .section__pic__container {
-        width: 40vw;
-        height: 40vw;
+        width: 275px;
+        height: 275px;
         justify-content: center;
+    }
+
+    .section__pic__container img{
+        width: 275px;
+        height: 275px;
     }
 
     .section__text__p2 {

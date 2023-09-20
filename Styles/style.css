@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: linear-gradient(180deg, #d6e5f8 0%, #87b3fa 100%);
+    background: #e6e6e6;
 }
 
 p {
@@ -41,6 +41,15 @@ nav {
     height: 13vh;
     min-width: 100%;
     z-index: 999;
+}
+
+.nav-bar-top {
+    position: fixed;
+    backdrop-filter: blur(4px);
+}
+
+.nav-bar-bottom {
+    position: static;
 }
 
 .nav-list {
@@ -81,7 +90,7 @@ nav {
     content: '';
     height: 0.2rem;
     width: 0%;
-    background: linear-gradient(90deg, #000080 0%, #E0115F 100%);
+    background: linear-gradient(90deg, #000080 0%, #0632b3 100%);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -124,29 +133,26 @@ section {
 #profile {
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    margin: 0;
+    height: 100vh;
 }
 
 .section__pic__container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
     transition: all 500ms;
 }
 
 .section__pic__container img {
-    width: 500px;
-    border-radius: 50%;
+    width: 700px;
+    height: 600px;
+    border-radius: 50px;
     transition: all 500ms;
 }
 
 .section__pic__container img:hover {
-    scale: 1.05;
-}
-
-.section__pic__container:hover {
     transform: translateY(-5%);
 }
 
@@ -283,7 +289,7 @@ section {
 
 #about {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .about-containers {
@@ -294,6 +300,13 @@ section {
     margin-top: 2rem;
 }
 
+.about-containers h3 {
+    color: #4169E1;
+}
+
+.about-containers p {
+    color: rgb(54, 54, 54);
+}
 
 .about-details-container {
     justify-content: center;
@@ -302,6 +315,14 @@ section {
 
 .about-details-container {
     display: flex;
+}
+
+
+.sub-about-text {
+    font-weight: 500;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    color: #7c99ee;
 }
 
 .arrow {
@@ -336,9 +357,11 @@ section {
     position: relative;
     height: fit-content;
 }
+
 #experience .title {
     margin-bottom: 5rem;
 }
+
 .skills-container {
     display: flex;
     gap: 2.5rem;
@@ -385,7 +408,7 @@ section {
     height: 100%;
     width: 65%;
     border-radius: 6px;
-    background: linear-gradient(90deg, #4169E1, #E0115F);
+    background: linear-gradient(90deg, #000080 0%, #0632b3 100%);
     animation: progress 0.7s ease-in-out forwards;
     opacity: 0;
 }
@@ -394,7 +417,7 @@ section {
     position: absolute;
     right: -14px;
     top: 28px;
-    background: #E0115F;
+    background: #0632b3;
     color: #fff;
     padding: 2px 6px;
     font-weight: 500;
@@ -410,7 +433,7 @@ section {
     bottom: -2px;
     height: 10px;
     width: 10px;
-    background-color: #E0115F;
+    background-color: #0632b3;
     transform: translateX(-50%)rotate(45deg);
     z-index: -1;
 }
@@ -450,7 +473,6 @@ article h3 {
 
 #projects {
     position: relative;
-    height: fit-content;
     margin-top: 10rem;
     height: fit-content;
 }
@@ -468,8 +490,8 @@ article h3 {
 
 .project-img {
     border-radius: 2rem;
-    width: 100%;
-    height: 90%;
+    width: 400px;
+    height: 400px;
 }
 
 .project-title {
@@ -491,8 +513,7 @@ article h3 {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(63, 63, 63) 0.1rem solid;
-    border-color: #E0115F;
+    border: #4169E1 0.2rem solid;
     background: #e6e6e6;
     margin: 2rem auto;
     padding: 0.5rem;
@@ -548,5 +569,3 @@ footer {
 footer p {
     text-align: center;
 }
-
-

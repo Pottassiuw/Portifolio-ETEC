@@ -1,28 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifolio - TRM</title>
-    <link rel="stylesheet" href="./Styles/style.css" />
-    <link rel="stylesheet" href="./Styles/mediaQueries.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" href="./Styles/animationprojecs.css" />
-  </head>
 
-  <body>
-    <nav id="nav-bar">
-      <div class="logo">
-        <h1>TRM <span>.</span></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portifolio - TRM</title>
+  <link rel="stylesheet" href="./Styles/style.css" />
+  <link rel="stylesheet" href="./Styles/mediaQueries.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./Styles/animations.css" />
+</head>
+
+<body>
+  <nav id="nav-bar" class="nav-bar-top">
+    <div class="logo">
+      <h1>TRM <span>.</span></h1>
+    </div>
+    <div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#about">Sobre</a></li>
+        <li class="nav-item"><a href="#experience">Habilidades</a></li>
+        <li class="nav-item"><a href="#projects">Projetos</a></li>
+        <li class="nav-item"><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu-icon">
+      <button onclick="toggleMenu()">
+        <img src="assets/hamburguerMenu.png" class="icon" />
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#about">Sobre</a></li>
+      <li class="nav-item"><a href="#experience">Habilidades</a></li>
+      <li class="nav-item"><a href="#projects">Projetos</a></li>
+      <li class="nav-item"><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic__container">
+      <img src="./Assets/maybe.jpg" alt="" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, Nós Somos uma</p>
+      <h1 class="title">Equipe</h1>
+      <p class="section__text__p2">De Desenvolvedores de sistemas</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./Assets/resume-example.pdf')">
+          Currículo
+        </button>
+        <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          Contato
+        </button>
       </div>
-      <div>
+      <div id="socials-container">
+        <a href="https://linkedin.com" target="_blank"><img src="./Assets/linkedin.png" class="icon" /></a>
+        <a href="https://github.com/Pottassiuw" target="_blank"><img src="./Assets/github.png" class="icon" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Venha Nos Conhecer Mais</p>
+    <h1 class="title">Sobre Nós</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./Assets/experience.png" class="icon" />
+            <h3>Experiência</h3>
+            <p>+6 meses<br />Desenvolvimento de Sistemas</p>
+          </div>
+          <div class="details-container">
+            <img src="./Assets/education.png" class="icon" />
+            <h3>Educação</h3>
+            <p>
+              Técnico de Desenvolvimentos de Sistemas<br />Etec Ilza
+              Nascimento Pintus
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p class="about-text">
+            Seja bem-vindo à nossa página! Somos um
+            pequeno grupo de amigos unidos pela paixão pelo design e pela
+            criatividade. Conheça um pouco mais sobre cada um de nós
+          <p class="sub-about-text">Matheus
+            dos Reis</p>Matheus é o nosso designer. Ele tem um talento
+          especial para transformar ideias em imagens incríveis que
+          realmente chamam a atenção. <p class="sub-about-text">Raphael Ryan</p>
+          Raphael é o nosso projetista e idealizador de ideias.
+          Ele é o responsável por compreender o rumo do projeto e dar estratégias que dão vida aos nossos projetos. <p
+            class="sub-about-text">Thiago
+            Batista </p>
+          Thiago é o responsável pelo Portifolio. Ele geralmente é quem desenvolve os projetos, transformando nossas
+          ideias em soluções digitais
+          funcionais. <br><br>Nossa jornada começou com a amizade e a vontade de
+          criar algo juntos. Acreditamos que cada projeto é uma oportunidade
+          de aprender e deixar nossa marca no mundo. Estamos comprometidos
+          em entregar trabalhos de qualidade, sempre com um toque de
+          originalidade. Este é o nosso espaço para compartilhar nosso
+          trabalho e paixão. Se você quiser colaborar ou simplesmente bater
+          um papo, não hesite em entrar em contato.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" class="icon arrow" onclick="location.href='./#experience' " />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Nossas</p>
+    <h1 class="title">Habilidades</h1>
+    <div class="skills-container">
+      <div class="skills-details-container">
+        <h3 class="experience-sub-title">Desenvolvimento <br />Front-End</h3>
+        <div class="skill-box">
+          <img src="./Icons/html-1.svg" alt="" />
+          <span class="skill-title">HTML</span>
+
+          <div class="skill-bar">
+            <span class="skill-per html">
+              <span class="tooltip">65%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons/css-3.svg" alt="" />
+          <span class="skill-title">CSS</span>
+
+          <div class="skill-bar">
+            <span class="skill-per css">
+              <span class="tooltip">55%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons/bootstrap-5-1.svg" alt="" />
+          <span class="skill-title">Bootstrap</span>
+
+          <div class="skill-bar">
+            <span class="skill-per bootstrap">
+              <span class="tooltip">40%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons/react-2.svg" alt="" />
+          <span class="skill-title">React Native</span>
+
+          <div class="skill-bar">
+            <span class="skill-per react-native">
+              <span class="tooltip">45%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons//javascript-1.svg" alt="" />
+          <span class="skill-title">Javascript</span>
+
+          <div class="skill-bar">
+            <span class="skill-per javascript">
+              <span class="tooltip">25%</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-details-container">
+        <h3 class="experience-sub-title">Desenvolvimento <br />Back-End</h3>
+        <div class="skill-box">
+          <img src="./Icons/git-icon.svg" alt="" />
+          <span class="skill-title">Git</span>
+          <div class="skill-bar">
+            <span class="skill-per git">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons/python-5.svg" alt="" />
+          <span class="skill-title">Python</span>
+          <div class="skill-bar">
+            <span class="skill-per python">
+              <span class="tooltip">55%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons/mysql-6.svg" alt="" />
+          <span class="skill-title">MySQL</span>
+          <div class="skill-bar">
+            <span class="skill-per mysql">
+              <span class="tooltip">45%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <img src="./Icons/c--4.svg" alt="" />
+          <span class="skill-title">C#</span>
+
+          <div class="skill-bar">
+            <span class="skill-per csh">
+              <span class="tooltip">30%</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" class="icon arrow" onclick="location.href='./#projects' " />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Nossos Mais Recentes</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/Card (Medium).png" alt="" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Card</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-1 project-btn"
+              onclick="location.href='https://snack.expo.dev/@pottassiu/card' ">
+              Expo.io
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Card.html'">
+              Sobre
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/forms-home.png" alt="" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Formulário</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-1 project-btn"
+              onclick="location.href='https://snack.expo.dev/@pottassiu/cadastro-cliente?platform=web'">
+              Expo.io
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Form.html'">
+              Sobre
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Assets/Filmes.png" alt="" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">App Filmes</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-1 project-btn"
+              onclick="location.href='https://snack.expo.dev/@pottassiu/site-filmes' ">
+              Expo.io
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Movies.html'">
+              Sobre
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" class="icon arrow" onclick="location.href='./#contact' " />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Entre em</p>
+    <h1 class="title">Contato</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./Assets/email.png" alt="" class="icon contact-icon email-icon" />
+        <a href="mailto:exmaple@example.me">example@example.me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav class="nav-bar-bottom">
+      <div class="nav-links-container">
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">Sobre</a></li>
           <li class="nav-item"><a href="#experience">Habilidades</a></li>
@@ -30,310 +292,14 @@
           <li class="nav-item"><a href="#contact">Contato</a></li>
         </ul>
       </div>
-
-      <div class="mobile-menu-icon">
-        <button onclick="toggleMenu()">
-          <img src="assets/hamburguerMenu.png" class="icon"/>
-        </button>
-      </div>
     </nav>
+    <p>
+      Copyright &#169; 2023 Thiago Batista. Matheus Dos Reis. Raphael Ryan.
+      Todos os Direitos Reservados
+    </p>
+  </footer>
 
-    <nav class="mobile-menu">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#about">Sobre</a></li>
-        <li class="nav-item"><a href="#experience">Habilidades</a></li>
-        <li class="nav-item"><a href="#projects">Projetos</a></li>
-        <li class="nav-item"><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
+  <script src="script.js"></script>
+</body>
 
-    <section id="profile">
-      <div class="section__pic__container">
-        <img src="./Assets/profile-pic.jpg" alt="" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Olá, Nós Somos uma</p>
-        <h1 class="title">Equipe</h1>
-        <p class="section__text__p2">De Desenvolvedores de sistemas</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./Assets/resume-example.pdf')"
-          >
-            Currículo
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact' ">
-            Contato
-          </button>
-        </div>
-        <div id="socials-container">
-          <a href="https://linkedin.com" target="_blank"
-            ><img src="./Assets/linkedin.png" class="icon"
-          /></a>
-          <a href="https://github.com/Pottassiuw" target="_blank"
-            ><img src="./Assets/github.png" class="icon"
-          /></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <p class="section__text__p1">Venha Nos Conhecer Mais</p>
-      <h1 class="title">Sobre Nós</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./Assets/experience.png" class="icon" />
-              <h3>Experiência</h3>
-              <p>+6 meses<br />Desenvolvimento de Sistemas</p>
-            </div>
-            <div class="details-container">
-              <img src="./Assets/education.png" class="icon" />
-              <h3>Educação</h3>
-              <p>
-                Técnico de Desenvolvimentos de Sistemas<br />Etec Ilza
-                Nascimento Pintus
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-              praesentium, modi at neque exercitationem eaque, magni incidunt
-              porro perspiciatis suscipit perferendis quod molestias adipisci
-              possimus ex recusandae quidem ratione. Incidunt sequi maiores
-              atque laudantium, reiciendis, error nemo deserunt ab explicabo
-              ipsa ullam eius magnam voluptate, saepe magni harum odio adipisci.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#experience' "
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Nossas</p>
-      <h1 class="title">Habilidades</h1>
-      <div class="skills-container">
-        <div class="skills-details-container">
-          <h3 class="experience-sub-title">Desenvolvimento <br />Front-End</h3>
-          <div class="skill-box">
-            <img src="./Icons/html-1.svg" alt="" />
-            <span class="skill-title">HTML</span>
-
-            <div class="skill-bar">
-              <span class="skill-per html">
-                <span class="tooltip">65%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons/css-3.svg" alt="" />
-            <span class="skill-title">CSS</span>
-
-            <div class="skill-bar">
-              <span class="skill-per css">
-                <span class="tooltip">55%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons/bootstrap-5-1.svg" alt="" />
-            <span class="skill-title">Bootstrap</span>
-
-            <div class="skill-bar">
-              <span class="skill-per bootstrap">
-                <span class="tooltip">40%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons/react-2.svg" alt="" />
-            <span class="skill-title">React Native</span>
-
-            <div class="skill-bar">
-              <span class="skill-per react-native">
-                <span class="tooltip">45%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons//javascript-1.svg" alt="" />
-            <span class="skill-title">Javascript</span>
-
-            <div class="skill-bar">
-              <span class="skill-per javascript">
-                <span class="tooltip">25%</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="skills-details-container">
-          <h3 class="experience-sub-title">Desenvolvimento <br />Back-End</h3>
-          <div class="skill-box">
-            <img src="./Icons/git-icon.svg" alt="" />
-            <span class="skill-title">Git</span>
-            <div class="skill-bar">
-              <span class="skill-per git">
-                <span class="tooltip">70%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons/python-5.svg" alt="" />
-            <span class="skill-title">Python</span>
-            <div class="skill-bar">
-              <span class="skill-per python">
-                <span class="tooltip">55%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons/mysql-6.svg" alt="" />
-            <span class="skill-title">MySQL</span>
-            <div class="skill-bar">
-              <span class="skill-per mysql">
-                <span class="tooltip">45%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <img src="./Icons/c--4.svg" alt="" />
-            <span class="skill-title">C#</span>
-
-            <div class="skill-bar">
-              <span class="skill-per csh">
-                <span class="tooltip">30%</span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#projects' "
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Nossos Mais Recentes</p>
-      <h1 class="title">Projetos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./Assets/project-1.png" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Card</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='' "
-              >
-                Expo.io
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./Projects/Card.html'"
-              >
-                Sobre
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./Assets/forms-home.png" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Formulário</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://snack.expo.dev/@pottassiu/cadastro-cliente?platform=web'"
-              >
-                Expo.io
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./Projects/Form.html'"
-              >
-                Sobre
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./Assets/project-3.png" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">App Filmes</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://snack.expo.dev/@pottassiu/site-filmes' "
-              >
-                Expo.io
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./Projects/Movies.html'"
-              >
-                Sobre
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#contact' "
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Entre em Contato</p>
-      <h1 class="title">Contato</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./Assets/email.png"
-            alt=""
-            class="icon contact-icon email-icon"
-          />
-          <a href="mailto:pottassiu@proton.me">pottassiu@proton.me</a>
-        </div>
-        <div class="contact-info-container">
-          <img src="./Assets/linkedin.png" alt="" class="icon contact-icon" />
-          <a
-            href="https://www.linkedin.com/in/thiago-nascimento-729077292/"
-            target="_blank"
-            >LinkedIn</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#about">Sobre</a></li>
-            <li class="nav-item"><a href="#experience">Habilidades</a></li>
-            <li class="nav-item"><a href="#projects">Projetos</a></li>
-            <li class="nav-item"><a href="#contact">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>
-        Copyright &#169; 2023 Thiago Batista. Matheus Dos Reis. Raphael Ryan.
-        Todos os Direitos Reservados
-      </p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
 </html>
