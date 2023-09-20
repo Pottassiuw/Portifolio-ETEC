@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #e6e6e6;
+    background: linear-gradient(180deg, #d6e5f8 0%, #87b3fa 100%);
 }
 
 p {
@@ -335,6 +335,7 @@ section {
 
 #experience {
     position: relative;
+    height: fit-content;
 }
 #experience .title {
     margin-bottom: 5rem;
@@ -450,6 +451,7 @@ article h3 {
 
 #projects {
     position: relative;
+    height: fit-content;
     margin-top: 10rem;
 }
 
