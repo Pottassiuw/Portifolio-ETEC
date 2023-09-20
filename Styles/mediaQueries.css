@@ -165,4 +165,8 @@
     .text-container {
         text-align: justify;
     }
+
+    .skills-container {
+        flex-direction: column;
+    }
 }

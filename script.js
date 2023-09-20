@@ -8,7 +8,3 @@ function toggleMenu() {
         document.querySelector('.icon').src = 'assets/closeMenu.png';
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> development-branch
