@@ -1,8 +1,9 @@
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
+
     footer nav .nav-list {
         justify-content: center;
         flex-direction: row;
@@ -10,17 +11,20 @@
     }
 
 }
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px) {
     .nav-list {
         display: none;
         background: #e6e6e6;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
-        box-shadow: 0px 2px 2px rgba(0,0,0, 0.4);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
     }
+
     .mobile-menu {
         margin-top: 1rem;
     }
+
     .mobile-menu-icon {
         display: block;
     }
@@ -30,21 +34,24 @@
         height: 33px;
     }
 
-    .mobile-menu ul{
+    .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
         position: relative;
     }
+
     .open {
         display: block;
         margin-bottom: 20rem;
     }
+
     #experience, .experience-details-container {
         margin-top: 2rem;
     }
@@ -86,20 +93,23 @@
         gap: 0.5rem;
         text-align: center;
     }
+
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
+
     .nav-list li a {
         font-size: 1.3rem;
         padding: 0 1.5rem;
     }
-}   
+}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     #contact, footer {
         height: 40vh;
     }
+
     #profile {
         height: 83vh;
         margin-bottom: 0;
@@ -112,9 +122,11 @@
     .article-container {
         flex-direction: column;
     }
+
     .nav-bar-top {
         position: static;
     }
+
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
@@ -135,6 +147,7 @@
     .experience-sub-title {
         font-size: 1.25rem;
     }
+
     .logo {
         font-size: 1.5rem;
     }
@@ -149,14 +162,14 @@
     footer nav .nav-list a {
         position: relative;
     }
-    
+
     .section__pic__container {
         width: 275px;
         height: 275px;
         justify-content: center;
     }
 
-    .section__pic__container img{
+    .section__pic__container img {
         width: 275px;
         height: 275px;
     }

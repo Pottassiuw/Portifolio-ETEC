@@ -36,7 +36,7 @@ nav {
 }
 
 .nav-bar-top {
-    position: fixed;
+    position: inherit;
     backdrop-filter: blur(4px);
 }
 
@@ -82,7 +82,7 @@ nav {
     content: '';
     height: 0.2rem;
     width: 0%;
-    background: linear-gradient(90deg, #000080 0%, #E0115F 100%);
+    background: linear-gradient(90deg, #000080 0%, #0632b3 100%);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -128,7 +128,13 @@ nav {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 10%;
+    margin: 3%;
+}
+
+#teoria, #pratica {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
 }
 
 .box-code-expo {
