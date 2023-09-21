@@ -10,6 +10,14 @@
         text-align: center;
     }
 
+    #about, #experience, #projects {
+        height: fit-content;
+    }
+
+    .section__pic__container {
+        margin-top: 10%;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
